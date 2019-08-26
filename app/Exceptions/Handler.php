@@ -46,6 +46,19 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        if ($exception instanceof MethodNotAllowedHttpException && $request->isJson()) {
+            return response()->json([
+                'status'    => false,
+                'message'   => 'Page Not Found.',
+            ], 404);
+        }
+
+        if ($exception instanceof ModelNotFoundException) {
+            return response()->json([
+                'error' => 'Record not found'
+            ], 404);
+        }
+
         return parent::render($request, $exception);
     }
 }
