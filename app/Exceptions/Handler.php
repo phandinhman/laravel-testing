@@ -2,11 +2,15 @@
 
 namespace App\Exceptions;
 
+use App\Traits\RestExceptionHandlerTrait;
+use App\Traits\RestTrait;
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 class Handler extends ExceptionHandler
 {
+    use RestTrait, RestExceptionHandlerTrait;
+
     /**
      * A list of the exception types that are not reported.
      *
@@ -46,17 +50,8 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        if ($exception instanceof MethodNotAllowedHttpException && $request->isJson()) {
-            return response()->json([
-                'status'    => false,
-                'message'   => 'Page Not Found.',
-            ], 404);
-        }
-
-        if ($exception instanceof ModelNotFoundException) {
-            return response()->json([
-                'error' => 'Record not found'
-            ], 404);
+        if ($this->isApiCall($request)) {
+            return $this->getJsonResponseForException($exception);
         }
 
         return parent::render($request, $exception);
