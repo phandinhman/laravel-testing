@@ -33,7 +33,7 @@ trait RestExceptionHandlerTrait
             default:
                 $rest = $this->badRequest($e);
         }
-        return $e;
+        return $rest;
     }
 
     protected function badRequest($e)
