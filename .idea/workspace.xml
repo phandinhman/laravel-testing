@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e7b8e29-20f5-434b-a52c-211309f22cc5" name="Default Changelist" comment="">
+<<<<<<< 4b415ba29b1de8cab71541dcdc880530eef957f4
       <change afterPath="$PROJECT_DIR$/app/Traits/RestExceptionHandlerTrait.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/Traits/RestTrait.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/config/api_exception.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.env.testing" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php" afterDir="false" />
+>>>>>>> Test
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,10 +27,13 @@
       <executable />
     </execution>
   </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="447" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
@@ -135,11 +145,11 @@
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/Api" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Api" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -154,11 +164,40 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.AuthTest">
+    <configuration name="Article (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Article" file="$PROJECT_DIR$/tests/Feature/Article.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Article" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Api\Article" file="$PROJECT_DIR$/tests/Feature/Api/Article.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Auth" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Auth" file="$PROJECT_DIR$/tests/Feature/Auth.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\AuthTest" file="$PROJECT_DIR$/tests/Unit/AuthTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Auth.testSignup" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Auth" file="$PROJECT_DIR$/tests/Feature/Auth.php" method="testSignup" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.AuthTest" />
+        <item itemvalue="PHPUnit.Auth" />
+        <item itemvalue="PHPUnit.Auth.testSignup" />
+        <item itemvalue="PHPUnit.Article (1)" />
+        <item itemvalue="PHPUnit.Article" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -191,15 +230,8 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php</url>
-          <line>4</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/laravel_testing@Auth.xml" NAME="Auth Coverage Results" MODIFIED="1566879137709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/laravel_testing@AuthTest.xml" NAME="AuthTest Coverage Results" MODIFIED="1566885882054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
